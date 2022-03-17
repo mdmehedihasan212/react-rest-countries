@@ -10,12 +10,11 @@ const Countries = () => {
     }, [])
     return (
         <div>
-            <h1>Hello From Countries</h1>
+            <h1>Rest All Countries</h1>
             {
-                Countries.map(country => console.log(country))
-            }
-            {
-                Countries.map(country => <Country name={country.name.common}></Country>)
+                Countries.map(country => <Country
+                    country={country}
+                ></Country>)
             }
         </div>
     );
